@@ -10,16 +10,15 @@ import Header from "./components/Header";
 export default function App() {
   return (
     <Router>
-      <Header>
+      <Header/>
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/offers" element={<Offers/>}/>
-          <Route path="/sign-in" element={<SignIn/>}/>
-          <Route path="/sign-up" element={<SignUp/>}/>
+          <Route path="/signin" element={<SignIn/>}/>
+          <Route path="/signup" element={<SignUp/>}/>
           <Route path="/profile" element={<Profile/>}/>
-          <Route path="/forgot-password" element={<ForgotPassword/>}/>
+          <Route path="/forgotpassword" element={<ForgotPassword/>}/>
         </Routes>
-      </Header>
     </Router>
   );
 }
